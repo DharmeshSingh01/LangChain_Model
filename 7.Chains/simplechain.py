@@ -10,7 +10,7 @@ prompt = PromptTemplate(
     input_variables=['topic']
 )
 parser = StrOutputParser()
-model = ChatGoogleGenerativeAI(model='gemini-2.5-flash')
+model = ChatGoogleGenerativeAI(model='gemini-3.5-flash')
 chain = prompt | model | parser
 
 result = chain.invoke({'topic': 'Fifa world cup'})
