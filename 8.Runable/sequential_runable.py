@@ -21,7 +21,8 @@ prompt2 = PromptTemplate(
 
 )
 
-chain = RunnableSequence(propmt | model | parser | prompt2 | model | parser)
+chain = RunnableSequence(propmt | model | parser |
+                         prompt2 | model | parser)  # type:ignore
 
 result = chain.invoke({'topic': 'C#'})
 
