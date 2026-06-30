@@ -35,3 +35,6 @@ streamlit
 chromadb
 pypdf
 tiktoken
+langchain_chroma
+wikipedia
+faiss-cpu
